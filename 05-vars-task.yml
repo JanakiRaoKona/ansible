@@ -10,4 +10,4 @@
       ansible.builtin.debug:
         vars: #variables declaration
         candidate: Jani
-        msg: "Hi I am {{name}} age is: {{age}} role: {{role}}"
+        msg: "Hi I am {{candidate}} age is: {{age}} role: {{role}}"
