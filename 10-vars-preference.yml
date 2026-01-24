@@ -6,10 +6,10 @@
     WISHES: morning from play list
   # vars_files:
   #   - vars.yml
-  vars_prompt:
-    - name: WISHES
-      prompt: Please enter wishes from args
-      private: false
+  # vars_prompt:
+  #   - name: WISHES
+  #     prompt: Please enter wishes from args
+  #     private: false
 
   tasks:
     - name: get preference
@@ -21,3 +21,5 @@
 # 1. args
 # 2. tasks
 # 3. files
+# 4. prompts
+# 5.
