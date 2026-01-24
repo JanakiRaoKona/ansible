@@ -1,0 +1,13 @@
+- name: variables
+  hosts: localhost
+  vars: #variables declaration
+    candidate: Rohan
+    age: 27
+    role: DevOps Engineer
+
+  tasks:
+    - name: print information
+      ansible.builtin.debug:
+        vars: #variables declaration
+        candidate: Jani
+        msg: "Hi I am {{name}} age is: {{age}} role: {{role}}"
