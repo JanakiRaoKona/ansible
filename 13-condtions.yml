@@ -13,7 +13,7 @@
         msg: "print the command error info: {{USER}}"
 
     - name: creating User
-      ansile.builtin.command: useradd expense 
+      ansible.builtin.command: useradd expense 
       when: USER.rc != 0 # working like if conditions 
 
     - name: final line 
