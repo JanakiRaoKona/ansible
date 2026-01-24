@@ -9,4 +9,4 @@
 
   tasks:
     - name: print information
-      ansible.builtin.debu: msg:"Hi welocme to the devops world"
+      ansible.builtin.debug: msg:"Hi welcome to the devops world"
