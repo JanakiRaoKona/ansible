@@ -5,6 +5,7 @@
   tasks:
     - name: get user
       ansible.builtin.command: id expense
-    - name: next line
+      ignore_error: true
+    - name: after error line
       ansible.builtin.debug:
-        msg: "after command debug"
+        msg: "after error command line"
