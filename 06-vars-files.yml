@@ -1,6 +1,8 @@
+# @format
+
 - name: variables files
   hosts: localhost
-  vars_files:
+  vars-files:
     - vars.yml
   tasks:
     - name: print override information
