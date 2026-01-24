@@ -1,7 +1,7 @@
 # @format
 
 - name: variables from inventory
-  hosts: localhost
+  hosts: local_host
   tasks:
     - name: print information
       ansible.builtin.debug:
