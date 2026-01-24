@@ -2,8 +2,8 @@
 
 - name: variables preference
   hosts: local
-  vars:
-    WISHES: morning from play list
+  # vars:
+  #   WISHES: morning from play list
   # vars_files:
   #   - vars.yml
   # vars_prompt:
@@ -22,4 +22,5 @@
 # 2. tasks
 # 3. files
 # 4. prompts
-# 5.
+# 5. play list level
+
