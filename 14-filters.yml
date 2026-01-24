@@ -26,8 +26,9 @@
     - name: print min and ma age 
       vars:
         ages: [ 20 , 35 , 27 , 60 ]
-      ansible.builtin.debug:
-        msg: "min age: {{ ages | min }} max age: {{ages | max }}"
+      tasks:
+        ansible.builtin.debug:
+          msg: "min age: {{ ages | min }} max age: {{ages | max }}"
     
     - name: print dictonary to items 
       vars:
