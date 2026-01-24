@@ -29,3 +29,16 @@
       ansible.builtin.debug:
         msg: "min age: {{ ages | min }} max age: {{ages | max }}"
     
+    - name: print dictonary to items 
+      vars:
+        my_dict:
+          Trainer: Siva Kumar
+          Duration: 120 Hrs
+          Course: DevOps with AWS 
+      tasks:
+        - name: print before conversion  
+          ansible.builtin.debug:
+            msg: "before conversion: {{my_dict}}"
+        - name: print after conversion
+          ansible.builtin.debug:
+            msg: "After conversion: {{ my_dict | dict2items }}"
