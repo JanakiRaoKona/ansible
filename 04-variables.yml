@@ -2,11 +2,12 @@
 
 - name: variables
   hosts: localhost
-  vars:
+  vars: #variables declaration
     name: Janaki Rao
     age: 27
     role: DevOps Engineer
 
   tasks:
     - name: print information
-      ansible.builtin.debug: msg:"Hi welcome to the devops world"
+      ansible.builtin.debug:
+        msg: "Hi I am {{name}} age is: {{age}} role: {{role}}"
