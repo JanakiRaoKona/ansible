@@ -37,7 +37,7 @@
           Trainer: Siva Kumar
           Duration: 120 Hrs
           Course: DevOps with AWS
-        ansible.builtin.debug:
-          msg: "before conversion: {{my_dict}}"
-        ansible.builtin.debug:
-          msg: "After conversion: {{ my_dict | dict2items }}"
+      ansible.builtin.debug:
+        msg: "before conversion: {{my_dict}}"
+      ansible.builtin.debug:
+        msg: "After conversion: {{ my_dict | dict2items }}"
