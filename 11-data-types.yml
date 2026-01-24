@@ -8,7 +8,7 @@
       - Linux
       - Shell
       - Ansible
-    Experiance: # map or dictonary (Key: value )
+    Experiance: # map or dictonary or object (Key: value )
       AWS: 3
       Shell: 2
       Docker: 1
