@@ -1,0 +1,9 @@
+- name: variables files
+  hosts: localhost
+  tasks:
+    - name: print override information
+      ansible.builtin.debug:
+        msg: "Hi I am {{candidate}} age is: {{age}} role: {{role}}"
+    - name: print inheretence information
+      ansible.builtin.debug:
+        msg: "Hi I am {{candidate}} age is: {{age}} role: {{role}}"

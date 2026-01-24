@@ -8,12 +8,12 @@
     role: DevOps Engineer
 
   tasks:
-    - name: print information1
+    - name: print override information
       vars: #variables declaration
         candidate: Jani
       ansible.builtin.debug:
         msg: "Hi I am {{candidate}} age is: {{age}} role: {{role}}"
 
-    - name: print information2
+    - name: print inheretence information
       ansible.builtin.debug:
         msg: "Hi I am {{candidate}} age is: {{age}} role: {{role}}"
