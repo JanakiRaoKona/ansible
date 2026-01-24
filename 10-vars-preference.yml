@@ -4,8 +4,8 @@
   hosts: local
   vars:
     WISHES: morning from play list
-  vars_files:
-    - vars.yml
+  # vars_files:
+  #   - vars.yml
   vars_prompt:
     - name: WISHES
       prompt: Please enter wishes from args
@@ -20,4 +20,4 @@
 # prefernces of variables value
 # 1. args
 # 2. tasks
-# 3.
+# 3. files
