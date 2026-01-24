@@ -1,0 +1,10 @@
+# @format
+
+- name: conditions
+  hosts: local
+  tasks:
+    - name: get user
+      ansible.builtin.command: id expense
+    - name: next line
+      ansible.builtin.debug:
+        msg: "after command debug"
