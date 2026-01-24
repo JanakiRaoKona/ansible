@@ -9,16 +9,16 @@
       vars:
         greeting: Good Morning
       ansible.builtin.debug:
-        msg: "{{ upper case: greeting | upper }}"
+        msg: "upper case: {{ greeting | upper }}"
 
     - name: print lower case
       vars:
         greeting: Good Morning
       ansible.builtin.debug:
-        msg: "{lower case: { greeting | lower }}"
+        msg: "lower case: {{ greeting | lower }}"
     
     - name: Remove Deuplicates
       vars:
         list: [ 1 , 2 , 3 , 3 , 3 , 4 , 5 , 5]
       ansible.builtin.debug:
-        msg: "unique list:{{ list | unique }}"
+        msg: "unique list: {{ list | unique }}"
