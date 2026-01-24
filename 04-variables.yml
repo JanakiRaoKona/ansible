@@ -1,0 +1,12 @@
+# @format
+
+- name: variables
+  hosts: localhost
+  vars:
+    name: Janaki Rao
+    age: 27
+    role: DevOps Engineer
+
+  tasks:
+    - name: print information
+      ansible.builtin.debu: msg:"Hi welocme to the devops world"
