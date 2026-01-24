@@ -1,6 +1,6 @@
 # @format
 
-- name: variables files
+- name: variables from files
   hosts: localhost
   vars_files:
     - vars.yml

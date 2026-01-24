@@ -1,6 +1,6 @@
 # @format
 
-- name: variables
+- name: variables tasks
   hosts: localhost
   vars: #variables declaration
     candidate: Rohan
