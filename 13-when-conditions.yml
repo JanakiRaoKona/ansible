@@ -11,5 +11,6 @@
       when: NUMBER | int < 10 # | symbols denotes filter
     - name: number is greater than or equal to 10
       ansible.builtin.debug:
+        msg: "Given number:{{NUMBER}} is more than or equal to 10"
       when: NUMBER | int >= 10
 
