@@ -28,7 +28,6 @@
     - name: print min and ma age
       vars:
         ages: [20, 35, 27, 60]
-      tasks:
       ansible.builtin.debug:
         msg: "min age: {{ ages | min }} max age: {{ages | max }}"
 
@@ -38,10 +37,7 @@
           Trainer: Siva Kumar
           Duration: 120 Hrs
           Course: DevOps with AWS
-      tasks:
-        - name: print before conversion
-          ansible.builtin.debug:
-            msg: "before conversion: {{my_dict}}"
-        - name: print after conversion
-          ansible.builtin.debug:
-            msg: "After conversion: {{ my_dict | dict2items }}"
+        ansible.builtin.debug:
+          msg: "before conversion: {{my_dict}}"
+        ansible.builtin.debug:
+          msg: "After conversion: {{ my_dict | dict2items }}"
