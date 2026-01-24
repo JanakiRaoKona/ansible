@@ -5,7 +5,14 @@
   tasks:
     - name: get user
       ansible.builtin.command: id expense
+      register: USER # show the error command
       ignore_errors: true
+    
+    - name: print error
+      ansible.builtin.debug: 
+        msg: "print the command error info: {{USER}}"
+
     - name: after error line
       ansible.builtin.debug:
         msg: "after error command line"
+        
