@@ -1,7 +1,7 @@
 # @format
 
 - name: variables preference
-  hosts: local
+  # hosts: local
   # vars:
   #   WISHES: morning from play list
   # vars_files:
@@ -23,4 +23,6 @@
 # 3. files
 # 4. prompts
 # 5. play list level
+# 6. inventory
+# 7. 
 
