@@ -3,7 +3,7 @@
 - name: variables
   hosts: localhost
   vars: #variables declaration
-    name: Janaki Rao
+    name: Rohan
     age: 27
     role: DevOps Engineer
 
