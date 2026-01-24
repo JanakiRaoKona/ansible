@@ -25,7 +25,7 @@
       ansible.builtin.debug:
         msg: "unique list: {{ list | unique }}"
 
-    - name: print min and ma age
+    - name: print min and max age
       vars:
         ages: [20, 35, 27, 60]
       ansible.builtin.debug:
