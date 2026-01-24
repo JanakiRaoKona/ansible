@@ -1,3 +1,5 @@
+# @format
+
 - name: variables
   hosts: localhost
   vars: #variables declaration
@@ -6,8 +8,12 @@
     role: DevOps Engineer
 
   tasks:
-    - name: print information
+    - name: print information1
       vars: #variables declaration
         candidate: Jani
+      ansible.builtin.debug:
+        msg: "Hi I am {{candidate}} age is: {{age}} role: {{role}}"
+
+    - name: print information2
       ansible.builtin.debug:
         msg: "Hi I am {{candidate}} age is: {{age}} role: {{role}}"
