@@ -1,7 +1,9 @@
+# @format
+
 - name: default value
   hosts: local
   tasks:
-    - name: print default value 
+    - name: print default value
       ansible.builtin.debug:
         msg: "Hi this the {{Course | default ('Ansible')}}"
 
@@ -16,30 +18,30 @@
         greeting: Good Morning
       ansible.builtin.debug:
         msg: "lower case: {{ greeting | lower }}"
-    
+
     - name: Remove Deuplicates
       vars:
-        list: [ 1 , 2 , 3 , 3 , 3 , 4 , 5 , 5]
+        list: [1, 2, 3, 3, 3, 4, 5, 5]
       ansible.builtin.debug:
         msg: "unique list: {{ list | unique }}"
-    
-- name: print min and ma age 
-  vars:
-    ages: [ 20 , 35 , 27 , 60 ]
-  tasks:
-    ansible.builtin.debug:
-      msg: "min age: {{ ages | min }} max age: {{ages | max }}"
-    
-- name: print dictonary to items 
-  vars:
-    my_dict:
-      Trainer: Siva Kumar
-      Duration: 120 Hrs
-      Course: DevOps with AWS 
-  tasks:
-    - name: print before conversion  
+
+    - name: print min and ma age
+      vars:
+        ages: [20, 35, 27, 60]
+      tasks:
       ansible.builtin.debug:
-        msg: "before conversion: {{my_dict}}"
-    - name: print after conversion
-      ansible.builtin.debug:
-        msg: "After conversion: {{ my_dict | dict2items }}"
+        msg: "min age: {{ ages | min }} max age: {{ages | max }}"
+
+    - name: print dictonary to items
+      vars:
+        my_dict:
+          Trainer: Siva Kumar
+          Duration: 120 Hrs
+          Course: DevOps with AWS
+      tasks:
+        - name: print before conversion
+          ansible.builtin.debug:
+            msg: "before conversion: {{my_dict}}"
+        - name: print after conversion
+          ansible.builtin.debug:
+            msg: "After conversion: {{ my_dict | dict2items }}"
