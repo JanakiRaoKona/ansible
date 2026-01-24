@@ -1,0 +1,14 @@
+- name: conditions
+  hosts: local
+  vars_prompt: # prompts are always consider has strings/texts
+    - name: NUMBER
+      prompt: Please Enter a Number
+      private: none
+  tasks:
+    - name: number is less than 10
+      ansible.builtin.debug:
+        msg: "Given number:{{NUMBER}} is less than 10"
+      when: NUMBER < 10
+    - name: number is greater than or equal to 10
+      ansible.builtin.debug:
+      when: NUMBER >= 10
