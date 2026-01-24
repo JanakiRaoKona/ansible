@@ -3,16 +3,20 @@
 - name: conditions
   hosts: local
   tasks:
-    - name: get user
+    - name: check user exists or not
       ansible.builtin.command: id expense
       register: USER # show the error command
       ignore_errors: true
     
-    - name: print error
+    - name: print User info
       ansible.builtin.debug: 
         msg: "print the command error info: {{USER}}"
 
-    - name: after error line
+    - name: creating User
+      ansile.builtin.command: useradd expense 
+      when: USER.rc != 0 # working like if conditions 
+
+    - name: final line 
       ansible.builtin.debug:
-        msg: "after error command line"
+        msg: "final command line"
         
