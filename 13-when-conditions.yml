@@ -3,7 +3,7 @@
   vars_prompt: # prompts are always consider has strings/texts
     - name: NUMBER
       prompt: Please Enter a Number
-      private: none
+      private: false
   tasks:
     - name: number is less than 10
       ansible.builtin.debug:
