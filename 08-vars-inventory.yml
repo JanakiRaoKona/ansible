@@ -1,7 +1,7 @@
 # @format
 
 - name: variables from inventory
-  hosts: localhost
+  hosts: local
   vars: 
     timings: "7:15 AM to 9:00 AM"
   tasks:
