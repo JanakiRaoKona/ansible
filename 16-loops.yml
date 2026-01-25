@@ -2,7 +2,7 @@
   hosts: web
   become: yes
   tasks:
-    - name: install package
+    - name: install packages
       ansible.builtin.dnf:
         name: "{{item}}"
         state: latest
