@@ -2,7 +2,7 @@
   hosts: web
   become: yes
   tasks:
-    - name: install packages
+    - name: install & un install packages
       ansible.builtin.dnf:
         name: "{{ item.name }}"
         state: "{{ item.state }}"
