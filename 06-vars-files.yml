@@ -2,8 +2,9 @@
 
 - name: variables from files
   hosts: localhost
+  remote_user: root
   vars_files:
-    - /ansible/vars-store/vars.yml
+    - /vars-store/vars.yml
   tasks:
     - name: print override information
       ansible.builtin.debug:
