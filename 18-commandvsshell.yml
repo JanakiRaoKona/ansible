@@ -11,5 +11,5 @@
     #interview questions shell vs command
 # simple commands without the need off shell variables , Environments & features
 # like redirections, pipes, & go for command module
-# id we need to run complex commands or scripts go for shell modules.
+# if we need to run complex commands or scripts go for shell modules.
 # whatever works in command module it will work shell module but vise versa its not true. 
