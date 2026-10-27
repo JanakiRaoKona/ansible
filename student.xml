@@ -1,0 +1,17 @@
+<Student>
+<firstName>Janaki Rao</firstName>
+<DOB>19-04-1998</DOB>
+<addresses>
+    <address type = "temp">
+    <door>123</door>
+    <Street>Telaga</Street>
+    <City>Srikakulam</City>
+    </address>
+
+    <address type = "perm">
+    <door>123</door>
+    <Street>Telaga</Street>
+    <City>Srikakulam</City>
+    </address>
+</addresses>
+</Student>

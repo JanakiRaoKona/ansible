@@ -1,0 +1,27 @@
+{
+  "Student": {
+    "firstName": "Janaki Rao",
+    "DOB": "19-04-1998",
+    "addresses": {
+      "address": [
+        {
+          "type": "temp",
+          "door": 123,
+          "Street": "Telaga",
+          "City": "Srikakulam"
+        },
+        {
+          "type": "perm",
+          "door": 123,
+          "Street": "Telaga",
+          "City": "Srikakulam"
+        }
+      ],
+      "skills": {
+        "OS": "Linux",
+        "Infra": "Terraform",
+        "Cloud": "AWS"
+      }
+    }
+  }
+}

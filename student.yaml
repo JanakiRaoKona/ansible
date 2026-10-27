@@ -1,0 +1,46 @@
+- first_name: "Janaki Rao" 
+# - indicated the list in yaml file
+  last_name: "Kona"
+  dob: "19-04-1998"
+
+  addresses: 
+    - type: "permanent"
+      door_num: "1-156"
+      street: "telaga"
+      city: "Hyderabad"
+
+    - type: "temporary"
+      door_num: "1-156"
+      street: "telaga"
+      city: "Hyderabad"
+  skills: 
+      "OS": "Linux"
+      "IDE": "Vs Code"
+      "Cloud": "AWS"
+  
+
+- first_name: "Janaki Rao" 
+# - indicated the list in yaml file
+  last_name: "Kona"
+  dob: "19-04-1998"
+
+  addresses: 
+    - type: "permanent"
+      door_num: "1-156"
+      street: "telaga"
+      city: "Hyderabad"
+
+    - type: "temporary"
+      door_num: "1-156"
+      street: "telaga"
+      city: "Hyderabad"
+  skills: 
+      "OS": "Linux"
+      "IDE": "Vs Code"
+      "Cloud": "AWS"
+
+
+  # here skills is map
+  # - first_name is list 
+  # addresses is list 
+
