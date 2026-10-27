@@ -1,0 +1,9 @@
+- name: ping demo
+  hosts: localhost #target ansible server its self 
+  connection: local # its will not expect cred 
+
+  tasks:  # tasks === modules === collections 
+    - name:  ping the localhost 
+      ping: 
+
+
