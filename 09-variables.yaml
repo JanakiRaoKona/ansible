@@ -3,6 +3,5 @@
   tasks:
     - name: print vars from inventory
       debug: 
-        msg: "User name : {{ username }} Password: {{ password }}"
-
+        msg: "Hello I am learning {{course}} from {{ trainer }} with {{ duration }}"
 
