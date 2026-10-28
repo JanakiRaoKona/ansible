@@ -1,0 +1,17 @@
+- name: vars from vars file 
+  hosts: local
+  vars:
+    course: Ansible from PLAY LEVEL
+  connection: local 
+  vars_files:
+    - course.yaml
+  vars_prompt: 
+    - name: course
+      prompt: Please enter your prompt level course
+      private: false
+  tasks:
+    - name: print course details from course file 
+      vars:
+        course: Ansible from TASK LEVEL
+      debug:
+        msg: "Hello I am learning {{course}} from {{ trainer }} with {{ duration }}"
