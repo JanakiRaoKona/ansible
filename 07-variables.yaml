@@ -3,8 +3,7 @@
   connection:  local 
   vars_files:
     - course.yaml
-
   tasks:
     - name: print course details from course file 
       debug:
-      msg: "Hello I am learning {{course}} from {{ trainer }} with {{ duration }}"
+        msg: "Hello I am learning {{course}} from {{ trainer }} with {{ duration }}"
