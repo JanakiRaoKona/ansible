@@ -6,4 +6,8 @@
       package:
         name: nginx
         state: present 
+    - name:  start nginx
+      service: 
+        name : mgix
+        state:  started
 
