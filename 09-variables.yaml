@@ -1,8 +1,7 @@
 - name:  name vars from inventory 
   hosts: frontend 
-  
   tasks:
-    - name: print vars 
+    - name: print vars from inventory
       debug: 
         msg: "User name : {{ username }} Password: {{ password }}"
 
