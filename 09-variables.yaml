@@ -4,5 +4,6 @@
   tasks:
     - name: print vars 
       debug: 
-      
+        msg: "User name : {{ username }} Password: {{ password }}"
+
 
