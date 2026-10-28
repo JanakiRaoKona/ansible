@@ -13,8 +13,9 @@
     - name: print course details from course file 
       # vars:
       #   course: Ansible from TASK LEVEL
-      trainer:  Siva 
-      duration:  120 hours 
+      vars:
+        trainer:  Siva 
+        duration:  120 hours 
       debug:
         msg: "Hello I am learning {{course}} from {{ trainer }} with {{ duration }}"
 
