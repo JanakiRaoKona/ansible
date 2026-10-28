@@ -8,6 +8,7 @@
         state: present 
     - name:  start nginx
       service: 
-        name : mgix
+        name : nginx
+        enabled: yes
         state:  started
 
