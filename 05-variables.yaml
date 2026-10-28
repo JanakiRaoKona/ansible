@@ -1,0 +1,12 @@
+- name: demo on task level variables
+  hotsts:  local
+  connection:  local
+  vars:
+    course:  devops
+    trainer:  Siva 
+    duration:  120 hours 
+
+  tasks:
+    - name:  print the vars 
+      debug: 
+        msg: "Hi I am learning {{ course }} from {{ trainer }} with {{ duration }}"
