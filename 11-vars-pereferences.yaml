@@ -11,7 +11,15 @@
       private: false
   tasks:
     - name: print course details from course file 
-      vars:
-        course: Ansible from TASK LEVEL
+      # vars:
+      #   course: Ansible from TASK LEVEL
       debug:
         msg: "Hello I am learning {{course}} from {{ trainer }} with {{ duration }}"
+
+  
+  # 1. command vars
+  # 2. Task level vars 
+  # 3.
+  #
+  #
+  #
