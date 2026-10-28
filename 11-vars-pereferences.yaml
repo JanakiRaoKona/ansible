@@ -24,6 +24,6 @@
   # 1. command vars
   # 2. Task level vars 
   # 3. File level
-  #
-  #
-  #
+  # 4. prompt level
+  # 5. PLAY LEVEL
+  # 6. inventory level is least preference
