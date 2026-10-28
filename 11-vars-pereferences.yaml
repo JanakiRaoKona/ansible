@@ -5,10 +5,10 @@
   connection: local 
   # vars_files:
   #   - course.yaml
-  vars_prompt: 
-    - name: course
-      prompt: Please enter your prompt level course
-      private: false
+  # vars_prompt: 
+  #   - name: course
+  #     prompt: Please enter your prompt level course
+  #     private: false
   tasks:
     - name: print course details from course file 
       # vars:
