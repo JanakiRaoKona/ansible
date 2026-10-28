@@ -3,8 +3,8 @@
   vars:
     course: Ansible from PLAY LEVEL
   connection: local 
-  vars_files:
-    - course.yaml
+  # vars_files:
+  #   - course.yaml
   vars_prompt: 
     - name: course
       prompt: Please enter your prompt level course
@@ -16,10 +16,11 @@
       debug:
         msg: "Hello I am learning {{course}} from {{ trainer }} with {{ duration }}"
 
-  
+  # preferences priority
+
   # 1. command vars
   # 2. Task level vars 
-  # 3.
+  # 3. File level
   #
   #
   #
