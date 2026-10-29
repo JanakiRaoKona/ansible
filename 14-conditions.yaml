@@ -1,7 +1,8 @@
 - name: Conditions 
   hosts: local 
   connection: local 
-  given_number: 20
+  vars: 
+    given_number: 20
   tasks:
     - name: print even number 
       debug: 
