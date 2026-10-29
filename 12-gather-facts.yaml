@@ -9,11 +9,9 @@
     - name: print OS Family
       debug: 
         msg: | 
-        os_family: "{{ ansible_facts['os_family'] }}"
-        default_ipv4_address: "{{ ansible_facts.default_ipv4.address }}"
-        default_ipv4_address: "{{ ansible_facts.default_ipv4.address }}"
+          os_family: "{{ ansible_facts['os_family'] }}"
+          default_ipv4_address: "{{ ansible_facts.default_ipv4.address }}"
+          default_ipv4_address: "{{ ansible_facts.default_ipv4.address }}"
 
 
-    - name: print system vendor
-      debug: 
-        msg: "{{ ansible_facts.system_vendor }}"
+   
