@@ -1,0 +1,12 @@
+- name:  demo om loops 
+  hosts: local 
+  connection: local
+  tasks:
+    - name: print loop values 
+      debug: 
+        msg: "{{ item }}"
+      loop:
+        - linux 
+        - terraform
+        - ansible 
+        - shell
