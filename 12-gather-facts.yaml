@@ -10,7 +10,7 @@
       debug: 
         msg: | 
         os_family: "{{ ansible_facts['os_family'] }}"
-        System_vendor: "{{ ansible_facts.system_vendor] }}"
+        System_vendor: "{{ ansible_facts.system_vendor }}"
         system: "{{ ansible_facts.system }}"
 
 
