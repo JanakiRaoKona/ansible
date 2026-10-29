@@ -12,7 +12,7 @@
     more_info: # dict /map
       trainer: Siva
       moths: 4 
-  exact_duration_in_months: 4.5
+    exact_duration_in_months: 4.5
   tasks:
     - name: print different vars with types 
       debbug:
