@@ -2,7 +2,18 @@
   hosts:  local 
   connection: local 
   tasks:
-    - name:  print OS Distro is RedHat
+    - name:  Install nginx in RedHat 
+      package:
+          name: nginx
+          state: present 
       debug: 
-        msg: Confirmed OS Distro is RedHat
-      when: ansible_facts.os_family == "RedHat/Deaim"
+        msg: Confirmed Installation in RedHat
+      when: ansible_facts.os_family == "RedHat"
+
+    - name:  Install nginx in Ubuntu 
+      package:
+          name: nginx
+          state: present 
+      debug: 
+        msg: Confirmed Installation in Ubuntu
+      when: ansible_facts.os_family == "Ubuntu"
