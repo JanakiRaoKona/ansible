@@ -15,7 +15,7 @@
     exact_duration_in_months: 4.5
   tasks:
     - name: print different vars with types 
-      debbug:
+      debug:
         msg: |
          name : "{{ course }} : {{ course | type_debug }}"
 
