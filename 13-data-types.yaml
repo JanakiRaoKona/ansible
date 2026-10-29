@@ -18,5 +18,5 @@
       debug:
         msg: |
          name : "{{ course }} : {{ course | type_debug }}"
-
+         name : "{{ duration_in_hurs }} : {{ duration_in_hurs | type_debug }}"
 
