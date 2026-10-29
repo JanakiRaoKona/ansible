@@ -12,4 +12,4 @@
 
     - name: print system vendor
       debug: 
-        msg: "{{ ansible_facts.system_vendor }}"
+        message: "{{ ansible_facts.system_vendor }}"
