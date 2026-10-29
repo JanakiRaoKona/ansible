@@ -3,7 +3,7 @@
   connection: local 
   tasks:
     - name:  Install nginx in RedHat 
-      package:
+      ansible.builtin.package:
           name: nginx
           state: present 
       debug: 
@@ -11,7 +11,7 @@
       when: ansible_facts.os_family == "RedHat"
 
     - name:  Install nginx in Ubuntu 
-      package:
+      ansible.builtin.package:
           name: nginx
           state: present 
       debug: 
