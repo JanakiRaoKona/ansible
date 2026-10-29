@@ -1,8 +1,8 @@
-- name:  Print Os is RedHat or not 
-  hosts:  local 
+- name: Print Os is RedHat or not 
+  hosts: local 
   connection: local 
   tasks:
-  - name:  Install nginx in RedHat 
+  - name: Install nginx in RedHat 
     ansible.builtin.package:
         name: nginx
         state: present 
@@ -10,7 +10,7 @@
       msg: Confirmed Installation in RedHat
     when: ansible_facts.os_family == "RedHat"
 
-  - name:  Install nginx in Ubuntu 
+  - name: Install nginx in Ubuntu 
     ansible.builtin.package:
         name: nginx
         state: present 
