@@ -11,7 +11,7 @@
         msg: | 
         os_family: "{{ ansible_facts['os_family'] }}"
         System_vendor: "{{ ansible_facts.system_vendor] }}"
-        system: "{{ ansible_facts.['system'] }}"
+        system: "{{ ansible_facts.system }}"
 
 
     - name: print system vendor
