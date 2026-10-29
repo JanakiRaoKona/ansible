@@ -5,6 +5,11 @@
     - name: print gathering facts 
       debug: 
         msg: "{{ ansible_facts }}"
+
     - name: print OS Family
       debug: 
         msg: "{{ ansible_facts['os_family'] }}"
+
+    - name: print system vendor
+      debug: 
+        msg: "{{ ansible_facts.system_vendor }}"
