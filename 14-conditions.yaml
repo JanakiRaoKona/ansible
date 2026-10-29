@@ -1,4 +1,4 @@
-- name: conditions 
+- name: Conditions 
   hosts: local 
   connection: local 
   given_number: 20
