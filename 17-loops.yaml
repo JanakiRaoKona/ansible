@@ -4,7 +4,7 @@
   become: yes
   vars:
     packages:
-    - { name: "nginx" ,  state: "absent" }
+    - { name: "nginx" ,  state: "present" }
     - { name: "mysql" ,  state: "present" }
     - { name: "git" ,  state: "absent" }
     - { name: "net-tools" ,  state: "present" }
