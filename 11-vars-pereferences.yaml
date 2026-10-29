@@ -19,7 +19,7 @@
       debug:
         msg: "Hello I am learning {{course}} from {{ trainer }} with {{ duration }}"
 
-  # preferences priority
+  # preferences priority is just for learning purpose 
 
   # 1. command vars
   # 2. Task level vars 
