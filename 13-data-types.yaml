@@ -14,14 +14,14 @@
       moths: 4 
     exact_duration_in_months: 4.5
   tasks:
-    - name: print different vars with types 
-      debug:
-        msg: |
-         name : "{{ course }} : {{ course | type_debug }}"
-         name : "{{ duration_in_hurs }} : {{ duration_in_hurs | type_debug }}"
-         name : "{{ live_session }} : {{ live_session | type_debug }}"
-         name : "{{ topics }} : {{ topics | type_debug }}"
-         name : {{ more_info }} : {{ more_info | type_debug }}
-         name : "{{ exact_duration_in_months }} : {{ exact_duration_in_months | type_debug }}"
+  - name: print different vars with types 
+    debug:
+      msg: |
+        name : "{{ course }} : {{ course | type_debug }}"
+        name : "{{ duration_in_hurs }} : {{ duration_in_hurs | type_debug }}"
+        name : "{{ live_session }} : {{ live_session | type_debug }}"
+        name : "{{ topics }} : {{ topics | type_debug }}"
+        name : {{ more_info }} : {{ more_info | type_debug }}
+        name : "{{ exact_duration_in_months }} : {{ exact_duration_in_months | type_debug }}"
         
 
