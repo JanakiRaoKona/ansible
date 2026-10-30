@@ -3,10 +3,18 @@
   connection: local 
   vars:
     topics: Linux,Ansible,Terraform,Shell
+    names:
+      - Janaki 
+      - Rao 
+      - Kona 
   tasks:
     - name:  print name 
       debug:
         msg : "{{ person_name | default ( 'Ramesh' )}}"
-    - name:  print name 
+    - name:  print topics 
       debug:
         msg : "{{ topics | split( ',' ) }}"
+
+    - name:  print full_name 
+      debug:
+        msg : "{{ names | join( ' ' ) }}"
