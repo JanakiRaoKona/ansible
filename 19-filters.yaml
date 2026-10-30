@@ -1,8 +1,12 @@
 - name: print the name 
   hosts: local 
   connection: local 
+  vars:
+    topics: "Linux, Ansible, Terraform, Shell" 
   tasks:
     - name:  print name 
       debug:
         msg : "{{ person_name | default ( 'Ramesh' )}}"
-   
+    - name:  print name 
+      debug:
+        msg : "{{ topics | split( ',' ) }}"
