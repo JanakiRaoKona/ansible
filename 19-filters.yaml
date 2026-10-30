@@ -7,6 +7,7 @@
       - Janaki 
       - Rao 
       - Kona 
+    topic: ANSIBLE
   tasks:
     - name:  print name 
       debug:
@@ -18,3 +19,6 @@
     - name:  print full_name 
       debug:
         msg : "{{ names | join( ' ' ) }}"
+    - name:  print full_name 
+      debug:
+        msg : "{{ topic | lower }}"
