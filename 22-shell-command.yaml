@@ -12,3 +12,11 @@
     - name:  print the output 
       debug:
         msg: "{{ ec2_user_output }}"
+    
+    - name:  test command module 
+      command: ls -la > /tmp/file.txt 
+      register: file_output
+
+    - name:  print the output 
+      debug:
+        msg: "{{ file_output }}" 
