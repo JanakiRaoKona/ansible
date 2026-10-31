@@ -5,6 +5,7 @@
     - name:  test command module 
       command: cat /etc/passwd/ | grep ec2-user 
       register: ec2_user_output 
+      ignore_errors: true
     
     - name:  print the output 
       debug:
